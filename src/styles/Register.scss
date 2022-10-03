@@ -1,0 +1,123 @@
+.register-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.register-form input {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  height: 40px;
+  line-height: 30px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-size: 12px;
+}
+
+.register-form input:last-child {
+  border-bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.register-form input:first-child {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.resister-wrapper {
+  padding: 20px;
+  width: 40%;
+  background-color: whitesmoke;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main-ragister-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.regiser-aggreement {
+  padding: 10px 5px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.register-btn {
+  width: 80%;
+  border: 1px solid black;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+  margin-top: 7px;
+}
+
+.register-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.not-valid-massange {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+// NOT
+
+.error-input-label {
+  color: red;
+}
+
+.error-input-field {
+  border-color: #ff0000;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 100px 0px;
+}
+
+.errorRegister {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ff0000;
+}
+
+.action-button {
+  position: relative;
+}
+
+.action-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .resister-wrapper {
+    height: 70%;
+    width: 300px;
+    padding: 25px 15px;
+  }
+  .main-ragister-title {
+    text-align: center;
+  }
+  .regiser-aggreement {
+    font-size: 10px;
+  }
+  .register-container {
+    height: 700px;
+  }
+}

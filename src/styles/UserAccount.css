@@ -1,0 +1,222 @@
+.user-account-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-tabs-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(227, 227, 227, 0.5);
+  margin-top: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.active-tab {
+  background-color: #0a3241;
+  color: white;
+}
+
+.user-tab {
+  padding: 0px 40px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.user-info-wrapper {
+  width: 100vw;
+  margin-top: 50px;
+  padding: 0px 400px;
+}
+
+.user-input-title {
+  width: 120px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.user-input {
+  padding: 10px 5px;
+  border: 1px solid rgb(182, 187, 189, 0.4);
+  margin-left: 50px;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.save-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.change-password-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.save-info-btn {
+  border: none;
+  padding: 10px 40px;
+  width: 200px;
+  margin-top: 30px;
+  background-color: #0a3241;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.save-info-btn:disabled {
+  background-color: rgb(10, 50, 65, 0.3);
+  cursor: default;
+  font-weight: normal;
+}
+
+.update-user-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  z-index: 425;
+  cursor: pointer;
+}
+
+.modal-message {
+  text-align: center;
+  min-width: 326px;
+  background: #fff;
+  max-height: calc(100% - 20px);
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  padding: 40px 80px;
+}
+
+.modal-password-massage {
+  text-align: center;
+  min-width: 326px;
+  background: #fff;
+  max-height: calc(100% - 20px);
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  padding: 40px 80px;
+}
+
+.modal-password-massage input {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.main-modal-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.change-password-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.change-password-btn {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.change-password-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .user-info-wrapper {
+    padding: 0px 10px;
+  }
+  .user-tabs-wrapper {
+    width: 100vw;
+    border-radius: 0px;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: start;
+    -webkit-overflow-scrolling: touch;
+    background: none;
+  }
+  .user-tabs-wrapper::-webkit-scrollbar {
+    width: 0;
+  }
+  .user-tab {
+    margin: 0px 5px;
+    background-color: rgb(227, 227, 227, 0.5);
+  }
+  .active-tab {
+    background-color: #0a3241;
+    color: white;
+  }
+  .user-info-wrapper {
+    margin-top: 40px;
+  }
+  .user-input-title {
+    width: 140px;
+  }
+  .update-user-modal {
+    background-color: #fff;
+  }
+  .modal-message {
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .close-modal-btn {
+    margin: 0;
+  }
+  .change-password-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .modal-password-massage input {
+    width: 100%;
+  }
+  .modal-password-massage {
+    padding: 10px 5px;
+  }
+  .main-modal-title {
+    margin-bottom: 50px;
+  }
+}

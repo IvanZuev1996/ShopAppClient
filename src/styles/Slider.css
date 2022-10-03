@@ -1,0 +1,146 @@
+.slider-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container .slider-right-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  opacity: 0.8;
+}
+
+.slider-right-arrow:hover {
+  border: 1px solid rgb(0, 0, 0, 0.8);
+}
+
+.slider-left-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.slider-left-arrow:hover {
+  border: 1px solid rgb(0, 0, 0, 0.8);
+}
+
+.slider-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(0vw);
+}
+
+.not-active-slide {
+  opacity: 0;
+}
+
+.loading {
+  filter: blur(10px);
+  clip-path: inset(0);
+}
+.loaded {
+  filter: blur(0px);
+  transition: filter 0.5s linear;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 99vw;
+}
+
+.slide-image-container {
+  height: 100%;
+  margin-left: 100px;
+  transition: 0.4s;
+}
+
+.slide-image-container:hover {
+  transform: scale(1.1);
+}
+
+.slide-image-container:hover ~ .slide-info-container .slider-button {
+  text-decoration: underline;
+}
+
+.slide-info-container {
+  flex: 1;
+  padding: 0px 100px;
+}
+
+.slide-image {
+  height: 80%;
+  margin-left: 100px;
+}
+
+.slider-main-title {
+  font-size: 40px;
+}
+
+.slider-discription {
+  margin: 30px 0px 30px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.slider-button {
+  border: none;
+  color: blue;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.slider-button:hover {
+  text-decoration: underline;
+}
+
+.slider-price {
+  font-size: 40px;
+  margin-top: 25px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0a3241;
+  color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1215px) {
+  .slider-container {
+    display: none;
+  }
+}

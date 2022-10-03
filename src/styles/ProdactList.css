@@ -1,0 +1,61 @@
+
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter{
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-list-header{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.prodact-list-title{
+    margin: 20px 50px;
+}
+
+.filter-select-company{
+    margin-left: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: none;
+}
+
+.filter-select-size{
+    margin-left: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    .prodact-list-title{
+        text-align: center;
+    }
+    .filter-container{
+        flex-direction: column;
+    }
+    .filter{
+        margin: 10px;
+    }
+    .filter-text{
+        font-size: 16px;
+    }
+    .filter-select-size{
+        margin-left: 24px;
+    }
+    .product-list-header{
+        margin-left: 15px;
+    }
+}

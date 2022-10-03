@@ -1,0 +1,13 @@
+.categories-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    .categories-container{
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+    }
+}
